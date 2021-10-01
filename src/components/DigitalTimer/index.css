@@ -1,0 +1,242 @@
+/* Write your CSS here */
+.digitalTimeapp {
+  background-image: linear-gradient(to right, #ffffff, #cffcf1, #defafe);
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.digitalTime-contenet {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: bold;
+  color: #0f172a;
+}
+.digitalTimerbg-container {
+  border: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+@media screen and (max-width: 576px) {
+  .digitalTimerbg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.digitalTimer-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  height: 250px;
+  width: 280px;
+  background-size: cover;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timer-container {
+  background-color: #ffffff;
+  border: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timers-text {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: bold;
+  color: #0f172a;
+  margin: 0px;
+}
+.timers {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+  color: #00d9f5;
+  margin: 0px;
+}
+
+@media screen and (min-width: 576px) {
+  .digitalTimer-container {
+    height: 350px;
+    width: 380px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .timer-container {
+    width: 120px;
+    height: 120px;
+  }
+  .timers-text {
+    font-size: 18px;
+  }
+  .timers {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .digitalTimer-container {
+    height: 450px;
+    width: 480px;
+  }
+  .timer-container {
+    width: 150px;
+    height: 150px;
+  }
+  .timers-text {
+    font-size: 20px;
+  }
+  .timers {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .digitalTimer-container {
+    height: 550px;
+    width: 580px;
+  }
+}
+.digitalTimer-control-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.start-reset-con {
+  display: flex;
+}
+.start-reset-options-con {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+.play-pause-reset-icon {
+  width: 20px;
+  height: 20px;
+}
+.start-pause-reset-status {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f172a;
+  margin-left: 8px;
+}
+.start-reset-button {
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin: 5px;
+}
+.set-status {
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #0f172a;
+  font-weight: bold;
+}
+@media screen and (min-width: 576px) {
+  .set-status {
+    font-size: 18px;
+  }
+  .start-pause-reset-status {
+    font-size: 20px;
+  }
+  .play-pause-reset-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .set-status {
+    font-size: 22px;
+  }
+  .start-pause-reset-status {
+    font-size: 25px;
+  }
+  .play-pause-reset-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .set-status {
+    font-size: 25px;
+  }
+  .start-pause-reset-status {
+    font-size: 28px;
+  }
+  .play-pause-reset-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+.inc-decr-options-con {
+  display: flex;
+  align-items: center;
+  order: 1;
+}
+@media screen and (max-width: 576px) {
+  .inc-decr-options-con {
+    order: 0;
+  }
+}
+.inc-decr-button {
+  width: 35px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.inc-decr-option {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #0f172a;
+  font-weight: bold;
+}
+.inc-decr-status-conta {
+  background-image: linear-gradient(to right, green, #cffcf1);
+  width: 60px;
+  height: 30px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+}
+.inc-decr-status {
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #0f172a;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .inc-decr-status {
+    font-size: 18px;
+  }
+}
